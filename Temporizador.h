@@ -1,15 +1,21 @@
 #ifndef TEMPORIZADOR_H
 #define TEMPORIZADOR_H
 
+
+#include <avr/io.h>
+
+
 class Temporizador
 {
-private:
-    unsigned long anterior;
-
 public:
     Temporizador();
-
+    void iniciar();
     bool cadaSegundo();
+
+
+private:
+    volatile bool banderaSegundo;
 };
+
 
 #endif
