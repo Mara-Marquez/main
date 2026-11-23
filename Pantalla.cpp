@@ -34,6 +34,24 @@ void Pantalla::mostrarError()
 
     display.display();
 }
+void Pantalla::mostrarMensaje(
+    const char* linea1,
+    const char* linea2
+)
+{
+    display.clearDisplay();
+
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+
+    display.setCursor(0,10);
+    display.println(linea1);
+
+    display.setCursor(0,25);
+    display.println(linea2);
+
+    display.display();
+}
 
 void Pantalla::mostrarDatos(
     float temp,

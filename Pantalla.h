@@ -23,6 +23,10 @@ public:
     );
 
     void mostrarError();
+    void mostrarMensaje(
+    const char* linea1,
+    const char* linea2
+);
 };
 
 #endif

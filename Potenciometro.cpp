@@ -2,8 +2,8 @@
 #include "ADC.h"
 #include <Arduino.h>
 
-#define MINTEMP 22.0
-#define MAXTEMP 30.0
+#define MINTEMP 19.0
+#define MAXTEMP 31.0
 ADCManager adc;
 
 
