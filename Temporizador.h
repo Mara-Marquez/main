@@ -14,4 +14,5 @@ private:
     volatile bool banderaSegundo;
 };
 
+
 #endif

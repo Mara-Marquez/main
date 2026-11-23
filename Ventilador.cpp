@@ -26,6 +26,7 @@ int Ventilador::controlar(float temperatura,
     }
     else
     {
+        //de un rango a otros
         pwm = map(
             (int)(temperatura * 10),
             (int)(setpoint * 10),
@@ -33,7 +34,7 @@ int Ventilador::controlar(float temperatura,
             80,
             255
         );
-
+//limita el resultado 
         pwm = constrain(pwm, 80, 255);
     }
 
